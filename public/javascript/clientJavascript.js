@@ -29,3 +29,6 @@ var returnKittens = function(){
     return "kittens";
 };
 
+var testlastPosition = function(str){
+    return str.length -1;
+};

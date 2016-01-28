@@ -14,7 +14,7 @@ describe('testing basic functions', function(){
         expect(returnKittens()).toBe("kittens");
     });
     it('should return index of last char', function(){
-        expect(lastPosition("kittens")).toEqual(6);
+        expect(testlastPosition("kittens")).toEqual(6);
     });
 });
 
