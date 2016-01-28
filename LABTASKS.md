@@ -37,17 +37,29 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####What is the purpose of package.json file? What's in it, and what does it mean?
 
+>its the data that is required for the npm identify the project also along with the dependencies. The file has a name and Version number, along with other needed information.
+
 #####What's in .gitgnore file? What's the purpose of it?
+
+>git uses it to determine which of the files or directories to ignore when committing, and should also be uploaded to the repository to share with out users.
 
 ## Part #2: exploring testing
 
 #####Find the testing file, describe where it is located and what it is testing. Run karma (the testing engine) as specified in the Readme and describe results. Do not edit any files at this time.
 
+> It is in the public > javascript folder.  It is testing if the form is working properly and returns the correct info.  Running karma tells us that 1 test failed.
+
 #####After having set up Travis CI with your forked project, play around the page for your project (build history, settings, branches, etc) and describe at least 3 features you think would be useful when troubleshooting a broken project.
+
+> We could test that our other form addition (the index of the last char in the string) returns the correct value for 'kittens' (6).  Also, we could have tests that tell us if a page isn't loading.  It would also tell us quickly if someone working on it branched the project or committed something before the page being broken.
 
 #####What was the build status of your project right after you got everything set up? Use Travis to find any problems, and describe what failed, if anything. (Which files, what lines, why did failure occur, etc.)
 
+>It failed on line 14 on clientjavascript.spec.js.  It expected 'kittens' to be 'not kittens!'
+
 #####Fix any problems described in the previous question. Describe how you fixed them. Push your fix to GitHub and post a link to the passing build (from build history) here.
+
+
 
 - Study jasmine testing syntax. Think of a Javascript function, describe its behavior by writing tests for it (this is test-driven development, or TDD). Add the function, run the tests. (Actually do this. Don't forget to commit your changes!)
 
