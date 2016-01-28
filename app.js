@@ -30,7 +30,7 @@ app.use(express.static(__dirname + '/public'));
 // app -- the name of our Express instance created on line 4
 // app.get('/kittens', etc...) -- defining behavior for a 'get' request to our Express instance (app), the request is '/kittens'
 // app.get('/kittens', function(req, res){ etc... }) -- defining a function to handle the request for '/kittens' (req = request, res = response)
-// app.get('/kittens', function(req, res){ res.send('kittens!"); }); -- responding to the request by sending the string "kittens!" to the browser.
+// app.get('/kittens', function(req, res){res.send('kittens!"); }); -- responding to the request by sending the string "kittens!" to the browser.
 
 
 app.get('/kittens', function(req, res){
