@@ -13,5 +13,8 @@ describe('testing basic functions', function(){
     it('this test should fail!', function(){
         expect(returnKittens()).toBe("kittens");
     });
+    it('should return index of last char', function(){
+        expect(lastPosition("kittens")).toEqual(6);
+    });
 });
 
