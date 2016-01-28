@@ -16,5 +16,8 @@ describe('testing basic functions', function(){
     it('should return index of last char', function(){
         expect(testlastPosition("kittens")).toEqual(6);
     });
+    it('A in 4 credits should give 16', function(){
+        expect(testgpaCalculator("a", 4)).toEqual(16);
+    });
 });
 
