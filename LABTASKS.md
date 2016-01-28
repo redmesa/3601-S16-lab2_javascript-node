@@ -11,23 +11,29 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####What is the purpose of app.js? Explain what happens when a user is trying to access a page "kittens", when a user is trying to access the page "petForm", and when the user submits a form on "petForm". Explain what a "route" is.
 
-> Your Answer Here!
+> App.js is a light weight JavaScript UI libary, currently is states that the Page is under construction. When the user trys to acces petForm, it will ask to make a new pet,  it will route the user to petform.html. Route take a post request to move the user to the correct requested html.
 
 #####What is the contents of the "public" folder? What is each of the html files there and how are they referenced in app.js?
 
-> Your Answer Here!
+> It contains the HTMl files that app.js is trying to use. Each html files refers to its own unique webpage. each page is referred to 'somewebpage.html'
 
 #####In your project change the message that appears when the user is trying to access the page "kittens". Describe what you did and how it worked.
 
-> You get the idea...
+> We changed the text to "page not implemented" and it worked when we accessed http://0.0.0.0:9000/kittens
 
 #####Also change the message that a user sees when they are trying to find a page that doesn't exist.
 
 #####Describe what happens when you submit a form on petForm page. What are the form parameters in petForm? What is the method for the form? Where is the form submission handled in the project? How are parameters extracted? How is the resulting message generated? How is this different from accessing the page petForm the first time (to see the form)?
 
+> Submitting changes the content of petForm to a message that displays the pet name and its string length. The method is post in the app.js file and it is handled there. The parameters come from the text inputted in the submit box which is called newPet. The parameters are extracted from there. It takes the parameters of newPet and extracts it from the html and produces them in console.  Instead of sending the html file it just sends the text about the string length.
+
 #####Where is client-side Javascript defined? Name file(s) in which it is used.
 
+> Under public > javascript as clientjavascript.js. Index.html uses the client javascript
+
 #####Where is server-side Javascript helper file defined? Where can it be used? Add a function to it and experiment with where you can call this function.
+
+> It is in the main repository tab as serverjavascript.js.  It can be used by app.js and other server side javascript files.
 
 #####What is the purpose of package.json file? What's in it, and what does it mean?
 
