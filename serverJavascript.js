@@ -8,15 +8,15 @@ exports.lastPosition = function(str){
     return str.length - 1;
 };
 
-exports.gpaCalculator = function(str){
+exports.gpaCalculator = function(str, num){
     if ((str == "A") || (str == "a")){
-        return 4;
+        return (4 * num);
     }
     if ((str == "A-") || (str == "a-")){
-        return 3.7;
+        return (3.7 * num);
     }
     if ((str == "B+") || (str == "b+")){
-        return 3.33;
+        return (3.33 * num);
     }
     if ((str == "B") || (str == "b")){
         return 3;
