@@ -19,31 +19,35 @@ exports.gpaCalculator = function(str, num){
         return (3.33 * num);
     }
     if ((str == "B") || (str == "b")){
-        return 3;
+        return (3 * num);
     }
     if ((str == "B-") || (str == "b-")){
-        return 2.70;
+        return (2.70 * num);
     }
     if ((str == "C+") || (str == "c+")){
-        return 2.3;
+        return (2.3 * num);
     }
     if ((str == "C") || (str == "c")){
-        return 2;
+        return (2 * num);
     }
     if ((str == "C-") || (str == "c-")){
-        return 1.7;
+        return (1.7 * num);
     }
     if ((str == "D+") || (str == "d+")){
-        return 1.3;
+        return (1.3 * num);
     }
     if ((str == "D") || (str == "d")){
-        return 1;
+        return (1 * num);
     }
     if ((str == "D-") || (str == "d-")){
-        return 0.7;
+        return (0.7 * num);
     }
     else return 0;
 };
-exports.gpaTotal = function(num1, num2, num3) {
-    return ((num1 + num2 + num3) / 3);
+exports.attemped = function(num1, num2, num3){
+    return (parseInt(num1) + parseInt(num2) + parseInt(num3));
+}
+
+exports.gpaTotal = function(num1, num2, num3, num4) {
+    return ((parseInt(num1)+parseInt(num2)+parseInt(num3))/ parseInt(num4));
 };

@@ -33,5 +33,5 @@ var testlastPosition = function(str){
     return str.length -1;
 };
 var testgpaCalculator = function(str, num){
-    return 16;
+    return  ;
 }
