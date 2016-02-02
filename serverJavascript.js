@@ -46,8 +46,8 @@ exports.gpaCalculator = function(str, num){
 };
 exports.attemped = function(num1, num2, num3){
     return (parseInt(num1) + parseInt(num2) + parseInt(num3));
-}
+};
 
 exports.gpaTotal = function(num1, num2, num3, num4) {
-    return ((parseInt(num1)+parseInt(num2)+parseInt(num3))/ parseInt(num4));
+    return ((parseInt(num1)+parseInt(num2)+parseInt(num3))/ parseInt(num4)).toFixed(2);
 };
